@@ -15,6 +15,9 @@
 		A7CD0BDE214C0D0300F9D3AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CD0BDD214C0D0300F9D3AA /* main.m */; };
 		A7CD0BE8214C0D0300F9D3AA /* HFWebImageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CD0BE7214C0D0300F9D3AA /* HFWebImageTests.m */; };
 		A7CD0BF3214C0D0300F9D3AA /* HFWebImageUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CD0BF2214C0D0300F9D3AA /* HFWebImageUITests.m */; };
+		A7CD0C03214C0D6000F9D3AA /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CD0C02214C0D6000F9D3AA /* UIImageView+WebCache.m */; };
+		A7CD0C06214C0F7E00F9D3AA /* HFImageLoadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CD0C05214C0F7E00F9D3AA /* HFImageLoadOperation.m */; };
+		A7CD0C0A214C125A00F9D3AA /* HFImageViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CD0C08214C121700F9D3AA /* HFImageViewManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		A7CD0BEE214C0D0300F9D3AA /* HFWebImageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HFWebImageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7CD0BF2214C0D0300F9D3AA /* HFWebImageUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HFWebImageUITests.m; sourceTree = "<group>"; };
 		A7CD0BF4214C0D0300F9D3AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7CD0C01214C0D6000F9D3AA /* UIImageView+WebCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+WebCache.h"; sourceTree = "<group>"; };
+		A7CD0C02214C0D6000F9D3AA /* UIImageView+WebCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
+		A7CD0C04214C0F7E00F9D3AA /* HFImageLoadOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HFImageLoadOperation.h; sourceTree = "<group>"; };
+		A7CD0C05214C0F7E00F9D3AA /* HFImageLoadOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HFImageLoadOperation.m; sourceTree = "<group>"; };
+		A7CD0C07214C121700F9D3AA /* HFImageViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HFImageViewManager.h; sourceTree = "<group>"; };
+		A7CD0C08214C121700F9D3AA /* HFImageViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HFImageViewManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +110,7 @@
 		A7CD0BCD214C0D0200F9D3AA /* HFWebImage */ = {
 			isa = PBXGroup;
 			children = (
+				A7CD0C00214C0D3F00F9D3AA /* HFWebImage */,
 				A7CD0BCE214C0D0200F9D3AA /* AppDelegate.h */,
 				A7CD0BCF214C0D0200F9D3AA /* AppDelegate.m */,
 				A7CD0BD1214C0D0200F9D3AA /* ViewController.h */,
@@ -130,6 +140,19 @@
 				A7CD0BF4214C0D0300F9D3AA /* Info.plist */,
 			);
 			path = HFWebImageUITests;
+			sourceTree = "<group>";
+		};
+		A7CD0C00214C0D3F00F9D3AA /* HFWebImage */ = {
+			isa = PBXGroup;
+			children = (
+				A7CD0C01214C0D6000F9D3AA /* UIImageView+WebCache.h */,
+				A7CD0C02214C0D6000F9D3AA /* UIImageView+WebCache.m */,
+				A7CD0C04214C0F7E00F9D3AA /* HFImageLoadOperation.h */,
+				A7CD0C05214C0F7E00F9D3AA /* HFImageLoadOperation.m */,
+				A7CD0C07214C121700F9D3AA /* HFImageViewManager.h */,
+				A7CD0C08214C121700F9D3AA /* HFImageViewManager.m */,
+			);
+			path = HFWebImage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,8 +285,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7CD0C0A214C125A00F9D3AA /* HFImageViewManager.m in Sources */,
 				A7CD0BD3214C0D0200F9D3AA /* ViewController.m in Sources */,
+				A7CD0C06214C0F7E00F9D3AA /* HFImageLoadOperation.m in Sources */,
 				A7CD0BDE214C0D0300F9D3AA /* main.m in Sources */,
+				A7CD0C03214C0D6000F9D3AA /* UIImageView+WebCache.m in Sources */,
 				A7CD0BD0214C0D0200F9D3AA /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
